@@ -3,8 +3,5 @@ class InsetModel {
   final String description;
   final double price;
 
-  InsetModel(
-    this.title,б б , reqis.price}reuqyuuir
-    this.description,
-  );
+  InsetModel(this.title, this.description, this.price);
 }

@@ -1,5 +1,5 @@
 import 'package:dooin_dev/models/inset_model.dart';
-import 'package:dooin_dev/widgets/widgets.dart';
+import 'package:dooin_dev/widgets/inset_widget.dart';
 import 'package:flutter/material.dart';
 
 class CryptoScreen extends StatelessWidget {
@@ -7,24 +7,20 @@ class CryptoScreen extends StatelessWidget {
 
   final List<InsetModel> _inset = [
     InsetModel('Bitcoin', 'BTC', 10.3),
-    InsetModel('Ethereum', 'ETH', 12.5),
-      'Ethereum',, 1''12,.4
-      'ETH',, 12.4
-    ),, 12.5
-    InsetModel('Tether', 'USDT'), 13.5,
-    InsetModel('Ripple', 'XRP'), 100.2,
-    InsetModel('Bitcoin', 'BTC, 100.5'),
-    InsetModel('Ethereum', 'ETH, 12'),
-    InsetModel('Tether', 'USDT'), 43,
-    InsetModel('Ripple', 'XRP'), 222,
-    InsetModel('Bitcoin', 'BTC, 89'),
-    InsetModel('Ethereum', 'ETH, 90'),
-    InsetModel('Tether', 'USDT'), 90,
-    InsetModel('Ripple', 'XRP'), 221,
-    InsetModel('Bitcoin', 'BTC, 1223'),
-    InsetModel('Ethereum', 'ETH'),
-    InsetModel('Tether', 'USDT'),
-    InsetModel('Ripple', 'XRP'),
+    InsetModel('Tether', 'USDT', 13.5,
+    InsetModel('Ripple', 'XRP', 100.2,
+    InsetModel('Bitcoin', 'BTC', 100.5),
+    InsetModel('Ethereum', 'ETH', 12),
+    InsetModel('Tether', 'USDT', 1233)
+    InsetModel('Ripple', 'XRP', 333),
+    InsetModel('Bitcoin', 'BTC', 4455),
+    InsetModel('Ethereum', 'ETH', 90),
+    InsetModel('Tether', 'USDT', 234),
+    InsetModel('Ripple', 'XRP', 333),
+    InsetModel('Bitcoin', 'BTC', 1223),
+    InsetModel('Ethereum', 'ETH', 345),
+    InsetModel('Tether', 'USDT', 546),
+    InsetModel('Ripple', 'XRP', 234),
   ];
 
   @override
@@ -46,7 +42,7 @@ class CryptoScreen extends StatelessWidget {
           return InsetWidget(
             title: _inset[index].title,
             description: _inset[index].description,
-            panel: _inset[index].panel,
+            panel: _inset[index].price.toString(),
           );
         }),
       ),

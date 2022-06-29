@@ -1,5 +1,5 @@
 import 'package:dooin_dev/models/inset_model.dart';
-import 'package:dooin_dev/widgets/widgets.dart';
+import 'package:dooin_dev/widgets/inset_widget.dart';
 import 'package:flutter/material.dart';
 
 class CurrencyScreen extends StatelessWidget {
@@ -38,6 +38,7 @@ class CurrencyScreen extends StatelessWidget {
           return InsetWidget(
             title: _inset[index].title,
             description: _inset[index].description,
+            panel: _inset[index].price.toString(),
           );
         }),
       ),
