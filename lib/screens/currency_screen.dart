@@ -39,6 +39,7 @@ class CurrencyScreen extends StatelessWidget {
             title: _insets[index].title,
             description: _insets[index].description,
             panel: _insets[index].price.toString(),
+            imageUrl: _insets[index].price.toString(),
           );
         }),
       ),
