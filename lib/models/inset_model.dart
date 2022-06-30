@@ -1,7 +1,7 @@
-class InsetModel {
+class CryptoModel {
   final String title;
   final String description;
   final double price;
 
-  InsetModel(this.title, this.description, this.price);
+  CryptoModel(this.title, this.description, this.price);
 }

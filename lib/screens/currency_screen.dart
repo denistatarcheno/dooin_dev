@@ -1,22 +1,22 @@
-import 'package:dooin_dev/models/inset_model.dart';
+import 'package:dooin_dev/models/currency_model.dart';
 import 'package:dooin_dev/widgets/inset_widget.dart';
 import 'package:flutter/material.dart';
 
 class CurrencyScreen extends StatelessWidget {
   CurrencyScreen({Key? key}) : super(key: key);
-  final List<InsetModel> _inset = [
-    InsetModel('EUR', 'EUR'),
-    InsetModel('CAD', 'CAD'),
-    InsetModel('CZK', 'CZK'),
-    InsetModel('UAH', 'UAH'),
-    InsetModel('EUR', 'EUR'),
-    InsetModel('CAD', 'CAD'),
-    InsetModel('CZK', 'CZK'),
-    InsetModel('UAH', 'UAH'),
-    InsetModel('EUR', 'EUR'),
-    InsetModel('CAD', 'CAD'),
-    InsetModel('CZK', 'CZK'),
-    InsetModel('UAH', 'UAH'),
+  final List<CurrencyModel> _insets = [
+    CurrencyModel('EUR', 'EUR', 18),
+    CurrencyModel('CAD', 'CAD', 15),
+    CurrencyModel('CZK', 'CZK', 17),
+    CurrencyModel('UAH', 'UAH', 12),
+    CurrencyModel('EUR', 'EUR', 18),
+    CurrencyModel('CAD', 'CAD', 15),
+    CurrencyModel('CZK', 'CZK', 17),
+    CurrencyModel('UAH', 'UAH', 12),
+    CurrencyModel('EUR', 'EUR', 18),
+    CurrencyModel('CAD', 'CAD', 15),
+    CurrencyModel('CZK', 'CZK', 17),
+    CurrencyModel('UAH', 'UAH', 12),
   ];
 
   @override
@@ -33,12 +33,12 @@ class CurrencyScreen extends StatelessWidget {
         ),
       ),
       body: ListView.builder(
-        itemCount: _inset.length,
+        itemCount: _insets.length,
         itemBuilder: ((context, index) {
           return InsetWidget(
-            title: _inset[index].title,
-            description: _inset[index].description,
-            panel: _inset[index].price.toString(),
+            title: _insets[index].title,
+            description: _insets[index].description,
+            panel: _insets[index].price.toString(),
           );
         }),
       ),

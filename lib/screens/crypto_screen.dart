@@ -5,22 +5,19 @@ import 'package:flutter/material.dart';
 class CryptoScreen extends StatelessWidget {
   CryptoScreen({Key? key}) : super(key: key);
 
-  final List<InsetModel> _inset = [
-    InsetModel('Bitcoin', 'BTC', 10.3),
-    InsetModel('Tether', 'USDT', 13.5,
-    InsetModel('Ripple', 'XRP', 100.2,
-    InsetModel('Bitcoin', 'BTC', 100.5),
-    InsetModel('Ethereum', 'ETH', 12),
-    InsetModel('Tether', 'USDT', 1233)
-    InsetModel('Ripple', 'XRP', 333),
-    InsetModel('Bitcoin', 'BTC', 4455),
-    InsetModel('Ethereum', 'ETH', 90),
-    InsetModel('Tether', 'USDT', 234),
-    InsetModel('Ripple', 'XRP', 333),
-    InsetModel('Bitcoin', 'BTC', 1223),
-    InsetModel('Ethereum', 'ETH', 345),
-    InsetModel('Tether', 'USDT', 546),
-    InsetModel('Ripple', 'XRP', 234),
+  final List<CryptoModel> _inset = [
+    CryptoModel('Bitcoin', 'BTC', 10.3),
+    CryptoModel('Ethereum', 'ETH', 12),
+    CryptoModel('Tether', 'USDT', 13.5),
+    CryptoModel('Ripple', 'XRP', 100.2),
+    CryptoModel('Bitcoin', 'BTC', 10.3),
+    CryptoModel('Ethereum', 'ETH', 12),
+    CryptoModel('Tether', 'USDT', 13.5),
+    CryptoModel('Ripple', 'XRP', 100.2),
+    CryptoModel('Bitcoin', 'BTC', 10.3),
+    CryptoModel('Ethereum', 'ETH', 12),
+    CryptoModel('Tether', 'USDT', 13.5),
+    CryptoModel('Ripple', 'XRP', 100.2),
   ];
 
   @override
