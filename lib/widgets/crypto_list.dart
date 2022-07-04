@@ -1,7 +1,6 @@
-import 'package:dooin_dev/models/inset_model.dart';
-import 'package:dooin_dev/utils/insets.dart';
+import 'package:dooin_dev/utils/crypto.dart';
+import 'package:dooin_dev/widgets/crypto_widget.dart';
 import 'package:flutter/material.dart';
-import 'inset_widget.dart';
 
 class CryptoList extends StatelessWidget {
   const CryptoList({Key? key}) : super(key: key);
@@ -9,13 +8,13 @@ class CryptoList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-      itemCount: insets.length,
+      itemCount: crypto.length,
       itemBuilder: ((context, index) {
-        return InsetWidget(
-          imageUrl: insets[index].imageUrl,
-          title: insets[index].title,
-          description: insets[index].description,
-          panel: insets[index].price.toString(),
+        return CryptoWidget(
+          imageUrl: crypto[index].imageUrl,
+          title: crypto[index].title,
+          description: crypto[index].description,
+          panel: crypto[index].price.toString(),
         );
       }),
     );

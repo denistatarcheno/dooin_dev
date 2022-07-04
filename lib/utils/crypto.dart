@@ -1,0 +1,28 @@
+import 'package:dooin_dev/models/crypto_model.dart';
+
+final List<CryptoModel> cryptos = [
+  CryptoModel('Bitcoin', 'BTC', 10.3,
+      "https://pngimg.com/uploads/bitcoin/bitcoin_PNG47.png?i=1"),
+  CryptoModel('Ethereum', 'ETH', 12,
+      "https://th.bing.com/th/id/R.885a120ce6f74437a9092bb15f133812?rik=g8mDPvgucZRHNw&pid=ImgRaw&r=0"),
+  CryptoModel('Tether', 'USDT', 13.5,
+      "https://th.bing.com/th/id/OIP.7f0vHEvColdxEKowfkOaCQHaHa?pid=ImgDet&rs=1"),
+  CryptoModel('Ripple', 'XRP', 100.2,
+      "https://th.bing.com/th/id/R.daa5d5a3551a2fc0962d0302adf6f8e3?rik=n6tDQyxanHAkMQ&riu=http%3a%2f%2fbitcoinist.com%2fwp-content%2fuploads%2f2016%2f08%2fRipple-logo.png&ehk=Nb%2bgdvk2WTEmhjktsZhe8M2UNWCgsWzqGoqUp2WJ6xI%3d&risl=&pid=ImgRaw&r=0"),
+  CryptoModel('Bitcoin', 'BTC', 10.3,
+      "https://pngimg.com/uploads/bitcoin/bitcoin_PNG47.png?i=1"),
+  CryptoModel('Ethereum', 'ETH', 12,
+      "https://th.bing.com/th/id/R.885a120ce6f74437a9092bb15f133812?rik=g8mDPvgucZRHNw&pid=ImgRaw&r=0"),
+  CryptoModel('Tether', 'USDT', 13.5,
+      "https://th.bing.com/th/id/OIP.7f0vHEvColdxEKowfkOaCQHaHa?pid=ImgDet&rs=1"),
+  CryptoModel('Ripple', 'XRP', 100.2,
+      "https://th.bing.com/th/id/R.daa5d5a3551a2fc0962d0302adf6f8e3?rik=n6tDQyxanHAkMQ&riu=http%3a%2f%2fbitcoinist.com%2fwp-content%2fuploads%2f2016%2f08%2fRipple-logo.png&ehk=Nb%2bgdvk2WTEmhjktsZhe8M2UNWCgsWzqGoqUp2WJ6xI%3d&risl=&pid=ImgRaw&r=0"),
+  CryptoModel('Bitcoin', 'BTC', 10.3,
+      "https://pngimg.com/uploads/bitcoin/bitcoin_PNG47.png?i=1"),
+  CryptoModel('Ethereum', 'ETH', 12,
+      "https://th.bing.com/th/id/R.885a120ce6f74437a9092bb15f133812?rik=g8mDPvgucZRHNw&pid=ImgRaw&r=0"),
+  CryptoModel('Tether', 'USDT', 13.5,
+      "https://th.bing.com/th/id/OIP.7f0vHEvColdxEKowfkOaCQHaHa?pid=ImgDet&rs=1"),
+  CryptoModel('Ripple', 'XRP', 100.2,
+      "https://th.bing.com/th/id/R.daa5d5a3551a2fc0962d0302adf6f8e3?rik=n6tDQyxanHAkMQ&riu=http%3a%2f%2fbitcoinist.com%2fwp-content%2fuploads%2f2016%2f08%2fRipple-logo.png&ehk=Nb%2bgdvk2WTEmhjktsZhe8M2UNWCgsWzqGoqUp2WJ6xI%3d&risl=&pid=ImgRaw&r=0"),
+];

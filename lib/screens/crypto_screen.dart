@@ -1,5 +1,5 @@
-import 'package:dooin_dev/models/inset_model.dart';
 import 'package:dooin_dev/widgets/crypto_list.dart';
+import 'package:dooin_dev/widgets/currency_list.dart';
 import 'package:flutter/material.dart';
 
 class CryptoScreen extends StatefulWidget {
@@ -14,13 +14,7 @@ class _CryptoScreenState extends State<CryptoScreen> {
 
   static List<Widget> _screensOptions = <Widget>[
     CryptoList(),
-    Text(
-      "Test 2",
-      style: const TextStyle(
-        color: Colors.white,
-        fontSize: 34,
-      ),
-    ),
+    CurrencyList(),
   ];
 
   void _onItemTapped(int index) {

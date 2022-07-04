@@ -1,23 +1,9 @@
-import 'package:dooin_dev/models/currency_model.dart';
-import 'package:dooin_dev/widgets/inset_widget.dart';
+import 'package:dooin_dev/utils/curencies.dart';
+import 'package:dooin_dev/widgets/currency_widget.dart';
 import 'package:flutter/material.dart';
 
 class CurrencyScreen extends StatelessWidget {
   CurrencyScreen({Key? key}) : super(key: key);
-  final List<CurrencyModel> _insets = [
-    CurrencyModel('EUR', 'EUR', 18),
-    CurrencyModel('CAD', 'CAD', 15),
-    CurrencyModel('CZK', 'CZK', 17),
-    CurrencyModel('UAH', 'UAH', 12),
-    CurrencyModel('EUR', 'EUR', 18),
-    CurrencyModel('CAD', 'CAD', 15),
-    CurrencyModel('CZK', 'CZK', 17),
-    CurrencyModel('UAH', 'UAH', 12),
-    CurrencyModel('EUR', 'EUR', 18),
-    CurrencyModel('CAD', 'CAD', 15),
-    CurrencyModel('CZK', 'CZK', 17),
-    CurrencyModel('UAH', 'UAH', 12),
-  ];
 
   @override
   Widget build(BuildContext context) {
@@ -33,13 +19,12 @@ class CurrencyScreen extends StatelessWidget {
         ),
       ),
       body: ListView.builder(
-        itemCount: _insets.length,
+        itemCount: curencies.length,
         itemBuilder: ((context, index) {
-          return InsetWidget(
-            title: _insets[index].title,
-            description: _insets[index].description,
-            panel: _insets[index].price.toString(),
-            imageUrl: _insets[index].price.toString(),
+          return CurrencyWidget(
+            title: curencies[index].title,
+            description: curencies[index].description,
+            panel: curencies[index].price.toString(),
           );
         }),
       ),
