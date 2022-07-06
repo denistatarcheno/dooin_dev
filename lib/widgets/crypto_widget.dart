@@ -23,17 +23,25 @@ class CryptoWidget extends StatelessWidget {
       margin: const EdgeInsets.all(10.0),
       child: Padding(
         padding: const EdgeInsets.only(
-          left: 4.0,
+          left: 8.0,
           top: 12.0,
           right: 8.0,
-          bottom: 10.0,
+          bottom: 12.0,
         ),
         child: Row(
           children: [
-            Image.network(
-              imageUrl,
-              width: 60.0,
-              height: 40.0,
+            Padding(
+              padding: EdgeInsets.only(
+                left: 12.0,
+                top: 12.0,
+                right: 12.0,
+                bottom: 21.0,
+              ),
+              child: Image.network(
+                imageUrl,
+                width: 28.0,
+                height: 28.0,
+              ),
             ),
             Expanded(
               child: Column(
@@ -42,7 +50,7 @@ class CryptoWidget extends StatelessWidget {
                   Text(
                     title,
                     style: const TextStyle(
-                      fontSize: 20,
+                      fontSize: 18,
                       fontWeight: FontWeight.w600,
                       color: Colors.white,
                     ),
@@ -50,22 +58,33 @@ class CryptoWidget extends StatelessWidget {
                   const SizedBox(
                     height: 3,
                   ),
-                  Text(
-                    description,
-                    style: const TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.w400,
-                        color: Colors.grey),
-                  )
+                  SizedBox(
+                    width: 300,
+                    child: Text(
+                      description,
+                      style: const TextStyle(
+                          fontSize: 11,
+                          fontWeight: FontWeight.w500,
+                          color: Colors.grey),
+                    ),
+                  ),
                 ],
               ),
             ),
-            Text(
-              panel,
-              style: const TextStyle(
-                fontSize: 30,
-                fontWeight: FontWeight.w600,
-                color: Colors.white,
+            Padding(
+              padding: EdgeInsets.only(
+                left: 18.0,
+                top: 20.0,
+                right: 18.0,
+                bottom: 20.0,
+              ),
+              child: Text(
+                panel,
+                style: const TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.w600,
+                  color: Colors.white,
+                ),
               ),
             ),
           ],

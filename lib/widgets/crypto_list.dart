@@ -7,16 +7,29 @@ class CryptoList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      itemCount: crypto.length,
-      itemBuilder: ((context, index) {
-        return CryptoWidget(
-          imageUrl: crypto[index].imageUrl,
-          title: crypto[index].title,
-          description: crypto[index].description,
-          panel: crypto[index].price.toString(),
-        );
-      }),
+    return Scaffold(
+      backgroundColor: const Color(0xff303030),
+      appBar: AppBar(
+        centerTitle: false,
+        elevation: 1.0,
+        backgroundColor: const Color(0xff303030),
+        title: const Text("Crypto"),
+        titleTextStyle: const TextStyle(
+          fontSize: 40,
+          fontWeight: FontWeight.w700,
+        ),
+      ),
+      body: ListView.builder(
+        itemCount: cryptos.length,
+        itemBuilder: ((context, index) {
+          return CryptoWidget(
+            imageUrl: cryptos[index].imageUrl,
+            title: cryptos[index].title,
+            description: cryptos[index].description,
+            panel: cryptos[index].price.toString(),
+          );
+        }),
+      ),
     );
   }
 }

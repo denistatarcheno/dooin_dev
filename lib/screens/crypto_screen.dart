@@ -33,26 +33,6 @@ class _CryptoScreenState extends State<CryptoScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xff303030),
-      appBar: AppBar(
-        centerTitle: false,
-        elevation: 1.0,
-        backgroundColor: const Color(0xff303030),
-        title: const Text("Crypto"),
-        titleTextStyle: const TextStyle(
-          fontSize: 40,
-          fontWeight: FontWeight.w700,
-        ),
-      ),
-      // body: ListView.builder(
-      //   itemCount: _inset.length,
-      //   itemBuilder: ((context, index) {
-      //     return InsetWidget(
-      //       title: _inset[index].title,
-      //       description: _inset[index].description,
-      //       panel: _inset[index].price.toString(),
-      //     );
-      //   }),
-      // ),
       body: _screensOptions.elementAt(_selectedIndex),
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: const Color(0xff303030),
@@ -70,10 +50,9 @@ class _CryptoScreenState extends State<CryptoScreen> {
             label: '',
           ),
         ],
-        iconSize: 23,
-        // selectedItemColor: const Color.fromARGB(255, 255, 255, 255),
-        selectedItemColor: Colors.red,
-        unselectedItemColor: Colors.amber,
+        iconSize: 30,
+        selectedItemColor: Colors.white,
+        unselectedItemColor: Colors.grey,
       ),
     );
   }

@@ -7,15 +7,27 @@ class CurrencyList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      itemCount: curencies.length,
-      itemBuilder: ((context, index) {
-        return CurrencyWidget(
-          title: curencies[index].title,
-          description: curencies[index].description,
-          panel: curencies[index].price.toString(),
-        );
-      }),
+    return Scaffold(
+      backgroundColor: const Color(0xff303030),
+      appBar: AppBar(
+        elevation: 1.0,
+        backgroundColor: const Color(0xff303030),
+        title: const Text("Currency"),
+        titleTextStyle: const TextStyle(
+          fontSize: 40,
+          fontWeight: FontWeight.w700,
+        ),
+      ),
+      body: ListView.builder(
+        itemCount: curencies.length,
+        itemBuilder: ((context, index) {
+          return CurrencyWidget(
+            title: curencies[index].title,
+            description: curencies[index].description,
+            panel: curencies[index].price.toString(),
+          );
+        }),
+      ),
     );
   }
 }
