@@ -15,8 +15,9 @@ class CryptoList extends StatelessWidget {
         backgroundColor: const Color(0xff303030),
         title: const Text("Crypto"),
         titleTextStyle: const TextStyle(
-          fontSize: 40,
-          fontWeight: FontWeight.w700,
+          color: Color(0xffFFFFFF),
+          fontSize: 36,
+          fontWeight: FontWeight.w600,
         ),
       ),
       body: ListView.builder(
