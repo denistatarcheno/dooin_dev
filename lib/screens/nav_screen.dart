@@ -2,14 +2,14 @@ import 'package:dooin_dev/widgets/crypto_list.dart';
 import 'package:dooin_dev/widgets/currency_list.dart';
 import 'package:flutter/material.dart';
 
-class CryptoScreen extends StatefulWidget {
-  CryptoScreen({Key? key}) : super(key: key);
+class NavScreen extends StatefulWidget {
+  NavScreen({Key? key}) : super(key: key);
 
   @override
-  State<CryptoScreen> createState() => _CryptoScreenState();
+  State<NavScreen> createState() => _NavScreenState();
 }
 
-class _CryptoScreenState extends State<CryptoScreen> {
+class _NavScreenState extends State<NavScreen> {
   int _selectedIndex = 0;
 
   static List<Widget> _screensOptions = <Widget>[

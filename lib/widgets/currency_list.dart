@@ -10,6 +10,7 @@ class CurrencyList extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xff303030),
       appBar: AppBar(
+        centerTitle: false,
         elevation: 1.0,
         backgroundColor: const Color(0xff303030),
         title: const Text("Currency"),
